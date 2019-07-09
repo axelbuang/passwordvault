@@ -1,4 +1,4 @@
-def login()
+def login():
     name = input('Name of Organization: ')
     website = input('Website/Domain:')
     email = input('Email: ')
