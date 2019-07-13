@@ -3,9 +3,10 @@
 import sys
 from datetime import datetime as dt
 from data_login import Information
+import passvault_art as p_art
 
 title = "Password Vault 1.0"
-day_of_the_year  =   dt.now().strftime("%j")
+day_of_the_year = dt.now().strftime("%j")
 date_today = dt.now().strftime("%A, %d %B %Y")
 time_today = dt.now().strftime("%H : %M : %S")
                                     
@@ -18,8 +19,10 @@ MISC
         -x : Exit.
 '''
 print(title)
+p_art.art()
 print('Day ' +  day_of_the_year + ":  " + date_today  + ", "  + time_today )
 print(what_to_do)
+
 while True:
 
     i = input('vault@your_stupid_computer~$ ')
